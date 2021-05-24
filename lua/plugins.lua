@@ -1,22 +1,45 @@
-local execute = vim.api.nvim_command
 local fn = vim.fn
+local execute = vim.api.nvim_command
 
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local install_path = fn.stdpath("data") .. "/site/pack/paqs/start/paq-nvim"
 
 if fn.empty(fn.glob(install_path)) > 0 then
-  fn.system({'git', 'clone', 'https://github.com/wbthomason/packer.nvim', install_path})
-  execute 'packadd packer.nvim'
+  execute("!git clone https://github.com/savq/paq-nvim " .. install_path)
+  execute "packadd paq-nvim"
 end
 
-vim.cmd "autocmd BufWritePost plugins.lua PackerCompile" -- Auto compile when there are changes in plugins.lua
+local paq = require("paq-nvim").paq
 
-return require('packer').startup(function()
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+paq {"nvim-treesitter/nvim-treesitter", run = "<cmd>:TSUpdate"}
 
-  -- Explorer
-  use "kyazdani42/nvim-tree.lua"
+paq "savq/paq-nvim"
+paq "ishan9299/modus-theme-vim"
+paq "franbach/miramare"
+paq "tamago324/lir.nvim"
+paq "numtostr/FTerm.nvim"
+paq "nvim-lua/popup.nvim"
+paq "nvim-lua/plenary.nvim"
+paq "nvim-telescope/telescope.nvim" --uses popup & plenary
+paq "nvim-telescope/telescope-project.nvim"
 
-  -- Themes
-  use "franbach/miramare"
-end)
+paq "hoob3rt/lualine.nvim"
+paq "kyazdani42/nvim-web-devicons"
+
+paq "hrsh7th/nvim-compe"
+paq "hrsh7th/vim-vsnip"
+paq "rafamadriz/friendly-snippets"
+
+paq "neovim/nvim-lspconfig"
+paq "kabouzeid/nvim-lspinstall"
+paq "glepnir/lspsaga.nvim"
+paq "onsails/lspkind-nvim"
+
+paq "Vhyrro/neorg"
+paq "jiangmiao/auto-pairs"
+paq "terrortylor/nvim-comment"
+
+paq "romgrk/barbar.nvim"
+
+paq "folke/which-key.nvim"
+
+paq "mhartington/formatter.nvim"

@@ -1,1 +1,2 @@
-# neovim
+# droidvim
+My personal neovim configuration. 
