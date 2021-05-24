@@ -29,4 +29,5 @@ opt("o", "termguicolors", true)
 opt("o", "mouse", "a")
 opt("o", "timeoutlen", 300)
 
-cmd "colorscheme miramare"
+cmd [[colorscheme tokyonight]]
+vim.g.tokyonight_style = "storm"

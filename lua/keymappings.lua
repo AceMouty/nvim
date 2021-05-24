@@ -6,9 +6,9 @@ local wk = require("which-key")
 -- Map <Leader> to Space
 opt("g", "mapleader", [[ ]])
 -- Clear highlighting
-map("n", "<C-l>", "<cmd>noh<CR>") 
+map("n", "<C-l>", "<cmd>noh<CR>")
 -- Leave insert mode
-map("i", "kj", "<Esc>") 
+map("i", "kj", "<Esc>")
 map("i", "jk", "<Esc>")
 -- Comments (Ctrl + /)
 map("n", "<C-_>", "<cmd>CommentToggle<cr>")
@@ -19,6 +19,9 @@ map("i", "<C-f>", "<cmd>Format<CR>")
 -- Toggle Terminal
 map("n", "<C-j>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 map("t", "<C-j>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
+-- Better nav for omnicomplete
+vim.cmd('inoremap <expr> <c-j> ("\\<C-n>")')
+vim.cmd('inoremap <expr> <c-k> ("\\<C-p>")')
 
 wk.register(
   {

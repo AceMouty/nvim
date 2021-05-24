@@ -10,36 +10,39 @@ end
 
 local paq = require("paq-nvim").paq
 
-paq {"nvim-treesitter/nvim-treesitter", run = "<cmd>:TSUpdate"}
-
+-- Package Manager
 paq "savq/paq-nvim"
-paq "ishan9299/modus-theme-vim"
-paq "franbach/miramare"
-paq "tamago324/lir.nvim"
+-- Treesitter
+paq {"nvim-treesitter/nvim-treesitter", run = "<cmd>:TSUpdate"}
+-- Telescope
 paq "numtostr/FTerm.nvim"
 paq "nvim-lua/popup.nvim"
 paq "nvim-lua/plenary.nvim"
 paq "nvim-telescope/telescope.nvim" --uses popup & plenary
 paq "nvim-telescope/telescope-project.nvim"
-
-paq "hoob3rt/lualine.nvim"
-paq "kyazdani42/nvim-web-devicons"
-
-paq "hrsh7th/nvim-compe"
-paq "hrsh7th/vim-vsnip"
-paq "rafamadriz/friendly-snippets"
-
+-- LSP
 paq "neovim/nvim-lspconfig"
 paq "kabouzeid/nvim-lspinstall"
 paq "glepnir/lspsaga.nvim"
 paq "onsails/lspkind-nvim"
-
-paq "Vhyrro/neorg"
+-- Color Schemes
+paq "ishan9299/modus-theme-vim"
+paq "franbach/miramare"
+paq "folke/tokyonight.nvim"
+-- File Manager
+paq "tamago324/lir.nvim"
+-- Status / Tab Line
+paq "hoob3rt/lualine.nvim"
+paq "romgrk/barbar.nvim"
+-- Icons
+paq "kyazdani42/nvim-web-devicons"
+-- Completeion
+paq "hrsh7th/nvim-compe"
+paq "hrsh7th/vim-vsnip"
+paq "rafamadriz/friendly-snippets"
+-- Key Helper (Which Key)
+paq "folke/which-key.nvim"
+-- Dev quality of life
 paq "jiangmiao/auto-pairs"
 paq "terrortylor/nvim-comment"
-
-paq "romgrk/barbar.nvim"
-
-paq "folke/which-key.nvim"
-
 paq "mhartington/formatter.nvim"
