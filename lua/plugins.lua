@@ -30,6 +30,7 @@ paq "ishan9299/modus-theme-vim"
 paq "franbach/miramare"
 paq "folke/tokyonight.nvim"
 -- File Manager
+paq "Vhyrro/neorg"
 paq "tamago324/lir.nvim"
 -- Status / Tab Line
 paq "hoob3rt/lualine.nvim"
