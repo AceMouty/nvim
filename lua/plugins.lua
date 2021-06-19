@@ -25,6 +25,9 @@ paq "neovim/nvim-lspconfig"
 paq "kabouzeid/nvim-lspinstall"
 paq "glepnir/lspsaga.nvim"
 paq "onsails/lspkind-nvim"
+paq "folke/trouble.nvim"
+-- Icons
+paq "kyazdani42/nvim-web-devicons"
 -- Color Schemes
 paq "ishan9299/modus-theme-vim"
 paq "franbach/miramare"
@@ -35,8 +38,6 @@ paq "tamago324/lir.nvim"
 -- Status / Tab Line
 paq "hoob3rt/lualine.nvim"
 paq "romgrk/barbar.nvim"
--- Icons
-paq "kyazdani42/nvim-web-devicons"
 -- Completeion
 paq "hrsh7th/nvim-compe"
 paq "hrsh7th/vim-vsnip"
