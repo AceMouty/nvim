@@ -22,6 +22,10 @@ map("t", "<C-j>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 -- Better nav for omnicomplete
 vim.cmd('inoremap <expr> <c-j> ("\\<C-n>")')
 vim.cmd('inoremap <expr> <c-k> ("\\<C-p>")')
+-- Compe
+vim.cmd("inoremap <silent><expr> <C-Space> compe#complete()")
+vim.cmd("inoremap <silent><expr> <CR> compe#confirm('<CR>')")
+vim.cmd("inoremap <silent><expr> <C-e> compe#close()")
 
 wk.register(
   {

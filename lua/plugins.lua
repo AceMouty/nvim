@@ -41,8 +41,9 @@ paq "tamago324/lir.nvim"
 -- Status / Tab Line
 paq "hoob3rt/lualine.nvim"
 paq "romgrk/barbar.nvim"
--- paq "hrsh7th/vim-vsnip"
--- paq "rafamadriz/friendly-snippets"
+-- snippets
+paq "hrsh7th/vim-vsnip"
+paq "rafamadriz/friendly-snippets"
 -- Key Helper (Which Key)
 paq "folke/which-key.nvim"
 -- Dev quality of life

@@ -14,6 +14,4 @@ configs.emmet_ls = {
   }
 }
 
-nvim_lsp.emmet_ls.setup {
-  on_attach = require("lsp").on_common_attach
-}
+nvim_lsp.emmet_ls.setup {}
