@@ -1,21 +1,20 @@
 -- TODO figure out why this don't work
---vim.fn.sign_define(
---    "LspDiagnosticsSignError",
---    {texthl = "LspDiagnosticsSignError", text = "", numhl = "LspDiagnosticsSignError"}
---)
---vim.fn.sign_define(
---    "LspDiagnosticsSignWarning",
---    {texthl = "LspDiagnosticsSignWarning", text = "", numhl = "LspDiagnosticsSignWarning"}
---)
---vim.fn.sign_define(
---    "LspDiagnosticsSignHint",
---    {texthl = "LspDiagnosticsSignHint", text = "", numhl = "LspDiagnosticsSignHint"}
---)
---vim.fn.sign_define(
---    "LspDiagnosticsSignInformation",
---    {texthl = "LspDiagnosticsSignInformation", text = "", numhl = "LspDiagnosticsSignInformation"}
---)
-
+-- vim.fn.sign_define(
+--   "LspDiagnosticsSignError",
+--   {texthl = "LspDiagnosticsSignError", text = "", numhl = "LspDiagnosticsSignError"}
+-- )
+-- vim.fn.sign_define(
+--   "LspDiagnosticsSignWarning",
+--   {texthl = "LspDiagnosticsSignWarning", text = "", numhl = "LspDiagnosticsSignWarning"}
+-- )
+-- vim.fn.sign_define(
+--   "LspDiagnosticsSignHint",
+--   {texthl = "LspDiagnosticsSignHint", text = "", numhl = "LspDiagnosticsSignHint"}
+-- )
+-- vim.fn.sign_define(
+--   "LspDiagnosticsSignInformation",
+--   {texthl = "LspDiagnosticsSignInformation", text = "", numhl = "LspDiagnosticsSignInformation"}
+-- )
 vim.cmd("nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>")
 vim.cmd("nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>")
 vim.cmd("nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>")
@@ -100,4 +99,5 @@ end
 -- and map buffer local keybindings when the language server attaches
 -- local servers = {"pyright", "tsserver"}
 -- for _, lsp in ipairs(servers) do nvim_lsp[lsp].setup {on_attach = on_attach} end
+
 return lsp_config
