@@ -23,10 +23,10 @@ paq "neovim/nvim-lspconfig"
 paq "kabouzeid/nvim-lspinstall"
 -- paq "onsails/lspkind-nvim"
 -- LSP Helpers
--- paq "glepnir/lspsaga.nvim"
+paq "glepnir/lspsaga.nvim"
 paq "folke/trouble.nvim"
 -- Completeion
--- paq "hrsh7th/nvim-compe"
+paq "hrsh7th/nvim-compe"
 -- Utils
 paq "numtostr/FTerm.nvim"
 -- Icons
